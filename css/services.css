@@ -1,0 +1,301 @@
+.services-hero {
+    background: linear-gradient(rgb(7, 46, 87, 1), rgb(7, 46, 87, 1));
+    height: 30vh;
+  }
+  
+  .services-hero .container {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services-hero h1 {
+    font-family: "Work Sans", sans-serif;
+    text-align: left;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 48px;
+    margin: 3rem 0;
+  }
+
+.services-grid{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 9rem 0;
+}
+
+.services-grid h2{
+    font-family: 'Work Sans', sans-serif;
+    color: var(--primary-blue);
+    padding: .5rem;
+    font-size: 48px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.services-grid h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 66px;
+    height: 6px;
+    background-color: red;
+}
+
+.services-grid p{
+    font-family: 'Rubik', sans-serif;
+    color: var(--font-primary-color);
+    padding: 1rem 2rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.services-grid .grid{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+.service-card h2{
+    font-size: 18px;
+    text-align: center;
+    
+}
+.service-card h2::after{
+    display: none;
+}
+.service-card{
+    width: 90%;
+    margin:  0 auto;
+}
+
+.service-card img{
+    width: 100%;
+    margin:  0 auto;
+    height: 100%;
+}
+
+.work-process{
+    padding: 3rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.work-process-step img{
+    width: 100%;
+    height: 100%;
+}
+
+.work-process .grid{
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+    gap: 3rem;
+}
+
+.work-process h1,.industries h2{
+    font-family: 'Work Sans', sans-serif;
+    color: var(--primary-blue);
+    padding: 2rem .5rem;
+   font-size: 48px;
+    position: relative;
+    text-align: center;
+}
+
+.work-process h2{
+    font-family: 'Rubik', sans-serif;
+    color: var(--font-primary-color);
+    padding: 1rem 2rem;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.industries .grid img{
+    width: 100%;
+}
+
+.industries .grid{
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+
+.truck-lease h2{
+    font-family: 'Work Sans', sans-serif;
+    color: #FFF;
+    padding: 2rem .5rem;
+   font-size: 48px;
+    position: relative;
+    text-align: center;
+}
+
+.truck-lease h3{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+}
+
+.truck-lease{
+    padding: 5rem;
+    background: var(--primary-blue);
+    color: #FFF;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.truck-lease .container {
+    width: 85%;
+    text-align: center;
+}
+
+.truck-lease .container h2, .truck-lease .container h3 .truck-lease .container a {
+    margin: 1.5rem 0;
+}
+
+@media(max-width:1000px){
+
+    .services-hero .container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 1.5rem;
+    }
+    .services-hero .container h1{
+          font-size: 42px;
+ }
+    
+    .services-hero .container p{
+       line-height: 3rem;
+        padding: 1.5rem;
+        font-size: 20px;
+        
+    }
+    
+    .services-hero .container .btn{
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+
+    .services-grid .grid, .work-process .grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2.5rem;
+        padding: 3rem 0;
+    }
+
+    .services-grid p {
+        font-size: 18px; 
+        width: 90%;
+    }
+
+    .services-grid h2, .industries h2, .work-process h1{
+        font-size: 36px;
+    }
+
+    .service-card h2{
+        font-size: 20px;
+    }
+
+    .industries .grid{
+        grid-template-columns: repeat(3,1fr);
+        
+
+    }
+
+
+    .truck-lease h2{
+        font-family: 'Work Sans', sans-serif;
+        color: #FFF;
+        padding: 2rem .35rem;
+       font-size: 36px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .truck-lease h3{
+        font-family: 'Rubik', sans-serif;
+        line-height: 1.6;
+        padding: .35rem;
+    }
+
+    .truck-lease .container {
+        width: 90%;
+    }
+    
+    
+    
+}
+
+@media (max-width:750px){
+    .services-hero .container, .work-process .grid{
+        grid-template-columns: repeat(1,1fr);
+        padding: 1.25rem;
+    }
+    .services-hero .container h1{
+          font-size: 38px;
+ }
+    
+    .services-hero .container p{
+       line-height: 3rem;
+        padding: 1.5rem;
+        font-size: 18px;
+        
+    }
+    
+    .services-hero .container .btn{
+        padding: 13px 18px;
+        font-size: 18px;
+    }
+
+
+
+    .services-grid .grid{
+        grid-template-columns: repeat(1,1fr);
+        place-content: center;
+        margin:0 auto;
+    }
+
+    .service-card{
+        margin: 0 auto;
+}
+.service-card img{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.industries .grid{
+    grid-template-columns: repeat(2,1fr);
+}
+    
+.work-process h2{
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.truck-lease h3{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+   
+}
+
+.truck-lease .container {
+    width: 95%;
+}
+.truck-lease  {
+    width: 100%;
+}
+}
+
+
+/*<h1>Our Services</h1>
+                <p>Husnain Muzaffar Khan Transport are keen to provide you the services for your heavy vehicles needs.
+                    Our transportation program will accompany you throughout your lease period. Husnain Muzaffar Khan
+                    Transport is the ideal place for quality trucks rental. <br> <br>
+
+                    You will choose from a variety of services and a big fleet of vehicles. The company has a big team
+                    of dedicated professionals. Other than that we also have a dedicated workshop to meet all your
+                    mantainance needs as well. <br> <br>
+
+                    We are here to meet all your transportation needs and make all your dreams and expectations come
+                    true.</p>
+                <a data-aos="zoom-in" href="contact.html" class="btn">Contact us</a>*/

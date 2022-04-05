@@ -1,0 +1,32 @@
+.contact-hero {
+  background: linear-gradient(rgb(7, 46, 87, 1), rgb(7, 46, 87, 1));
+  height: 30vh;
+}
+
+.contact-hero .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero h1 {
+  font-family: "Work Sans", sans-serif;
+  text-align: left;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 48px;
+  margin: 3rem 0;
+}
+
+.map {
+  padding: 3rem 1rem;
+  margin: 5rem 0;
+}
+
+.map h2 {
+  font-family: "Work Sans", sans-serif;
+  color: var(--primary-blue);
+  padding: 2rem 0.5rem;
+  font-size: 48px;
+  position: relative;
+  text-align: center;
+}
